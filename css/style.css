@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+  width: 1000px;
+  font-family: "微軟正黑體";
+  margin:0 auto;
+}
+
+.page{
+  background: #f6f6f6;
+  display: flex;
+  justify-content: flex-end;
+  padding: 7px 8px;
+}
+.page a{
+  text-decoration: none;
+  padding: 0 8px;
+}
+.page p{
+  display: inline;
+}
+.fb{
+  color:#6d79a4;
+  border-right: 1px gray solid;
+}
+.twitter{
+  color:#55abd5;
+}
+.page a:hover{
+  color:red;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+.list h1{
+  background-image: url(../img/logo.png);
+  width: 224px;
+  height: 50px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list ul{
+  display: flex;
+  align-items: center;
+}
+.list a{
+  text-decoration: none;
+  color: #00cd9b;
+  padding:18px 24px;
+  /* display: block */
+}
+.list a:hover{
+  padding-bottom:12px;
+  border-bottom:3px solid #00cd9b;
+}
+.banner{
+  background-image: url(../img/banner.png);
+  height: 346px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title{
+  color:white;
+  background-color: rgba(0,0,0,.5);
+  font-size: 34px;
+  line-height: 1.2;
+  padding:40px 0 40px 22px;
+}
+
+.course{
+  display: flex;
+  justify-content: space-around;
+}
+.course-item{
+  width: 263px;
+  border-bottom:1px solid #f0f0f0;
+  border-left:1px solid #f0f0f0;
+  border-right:1px solid #f0f0f0;
+  box-shadow: 0px 5px 6px #dbdbdb;
+  text-align: justify;
+  padding:25px 20px;
+  margin-top: 60px;
+  margin-bottom: 64px;
+}
+.course-item img{
+  display: block;
+  margin: auto;
+}
+.img1{
+  padding-bottom: 10px;
+}
+.img2{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.img3{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.course-item h2{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.course-item p{
+  line-height: 1.5;
+}
+.course-item ul{
+  padding-left: 22px;
+  padding-bottom: 23px;
+}
+.course-item li{
+  list-style-type:disc;
+  line-height: 1.5;
+}
+.comparison h2{
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.comparison table{
+  width: 840px;
+  margin: auto;
+}
+.comparison tr{
+  border-top: 1px solid #dcdcdc;
+  border-bottom:1px solid #dcdcdc;
+  text-align: left;
+}
+.comparison th,.comparison td{
+  padding:10px 0 10px 24px;
+}
+.comparison th{
+  background: #f7f7f7;
+  font-weight: bold;
+}
+.better{
+  color:#04aa73;
+}
+.data{
+  background: #00674c;
+  margin-top: 65px;
+  margin-bottom: 25px;
+}
+.data h2,.data p{
+  color: #fff;
+}
+.data h2{
+  font-size: 27px;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 37px;
+  padding-bottom: 31px;
+}
+.write{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.text-input{
+  width: 465px;
+  height: 245px;
+}
+.write p{
+  padding: 5px 0px;
+}
+.space{
+  width: 460px;
+  height: 34px;
+  margin-bottom: 11px;
+  display: block;
+}
+.space:focus,.text-input:focus,.submit:focus
+{
+  outline: none;
+}
+.space:focus,.text-input:focus{
+  background: #d8f6f5;
+}
+.submit{
+  float: right;
+  color: #fff;
+  background: #00cc98;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+}
+.submit:hover{
+  cursor: pointer;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:50px ;
+}
+.footer p{
+  line-height: 1.5;
+  font-size: 17px;
+}
+.footer a{
+  text-decoration: none;
+  color:#e7256c;
+}
