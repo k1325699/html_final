@@ -80,7 +80,7 @@ table {
   justify-content: space-between;
   background: #fff;
 }
-.list h1{
+.list .logo{
   background-image: url(../img/logo.png);
   width: 224px;
   height: 50px;
@@ -93,13 +93,13 @@ table {
   display: flex;
   align-items: center;
 }
-.list a{
+.list ul a{
   text-decoration: none;
   color: #00cd9b;
   padding:18px 24px;
   /* display: block */
 }
-.list a:hover{
+.list ul a:hover{
   padding-bottom:12px;
   border-bottom:3px solid #00cd9b;
 }
@@ -238,6 +238,11 @@ table {
   font-weight: bold;
   padding: 10px 20px;
   border: none;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 .submit:hover{
   cursor: pointer;
